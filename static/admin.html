@@ -1,0 +1,167 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Pierre Maoui & Paul Cancouët">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Andon</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-warning border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">Wing</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+  <a class="colorbtn btn btn-outline-dark" href="index.html">Packing view</a>
+  <a class="colorbtn btn btn-outline-dark" href="manager.html">Global view</a>
+  </nav>
+</div>
+
+<div class="header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Andon Admin Console</h1>
+</div>
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="container">
+	
+	<!-- Default switch -->
+	<div class="custom-control custom-switch">
+ 	<input type="checkbox" class="custom-control-input" id="godModeCheckbox">
+  	<label class="custom-control-label" for="godModeCheckbox">God mode</label>
+	</div>
+
+	Station :
+        <select id="device_address" class="form-control">
+                <option value="">Test</option>
+                <option value="">Poste 1</option>
+                <option value="">Poste 2</option>
+                <option value="">Poste 3</option>
+                <option value="">Poste 4</option>
+                <option value="">Poste 5</option>
+                <option value="">Poste 6</option>
+                <option value="">Poste 7</option>
+                <option value="">Poste 8</option>
+                <option value="">Poste 9</option>
+                <option value="">Poste 10</option>
+                <option value="">Poste 11</option>
+                <option value="">Poste 12</option>
+                <option value="">Poste 13</option>
+                <option value="">Poste 14</option>
+                <option value="">Poste 15</option>
+                <option value="">Poste 16</option>
+                <option value="">Poste 17</option>
+                <option value="">Poste 18</option>
+                <option value="">Poste 19</option>
+                <option value="">Poste 20</option>
+        </select>
+        <hr/>
+    </div>
+
+  <div class="container">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+	  <button type="button" id="black" class="colorbtn btn btn-lg btn-block btn-secondary">OFF</button>
+  </div>
+  </div>
+  </div>
+    
+  <div class="container">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Solid</h4>
+      </div>
+      <div class="card-body">
+        <button type="button" id="solid-red" class="colorbtn btn btn-block btn-outline-dark">Red</button>
+        <button type="button" id="solid-green" class="colorbtn btn btn-block btn-outline-dark">Green</button>
+        <button type="button" id="solid-blue" class="colorbtn btn btn-block btn-outline-dark">Blue</button>
+        <button type="button" id="solid-cyan" class="colorbtn btn btn-block btn-outline-dark">Cyan</button>
+        <button type="button" id="solid-magenta" class="colorbtn btn btn-block btn-outline-dark">Magenta</button>
+        <button type="button" id="solid-yellow" class="colorbtn btn btn-block btn-outline-dark">Yellow</button>
+        <button type="button" id="solid-orange" class="colorbtn btn btn-block btn-outline-dark">Orange</button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Blink</h4>
+      </div>  
+      <div class="card-body">
+        <button type="button" id="blink1-red" class="colorbtn btn btn-block btn-outline-dark">Red-1</button>
+        <button type="button" id="blink1-green" class="colorbtn btn btn-block btn-outline-dark">Green-1</button>
+        <button type="button" id="blink1-blue" class="colorbtn btn btn-block btn-outline-dark">Blue-1</button>
+        <button type="button" id="blink1-yellow" class="colorbtn btn btn-block btn-outline-dark">Yellow-1</button>
+        <button type="button" id="blink1-orange" class="colorbtn btn btn-block btn-outline-dark">Orange-1</button>
+
+        <button type="button" id="blink2-red" class="colorbtn btn btn-block btn-outline-dark">Red-2</button>
+        <button type="button" id="blink2-green" class="colorbtn btn btn-block btn-outline-dark">Green-2</button>
+        <button type="button" id="blink2-blue" class="colorbtn btn btn-block btn-outline-dark">Blue-2</button>
+        <button type="button" id="blink2-yellow" class="colorbtn btn btn-block btn-outline-dark">Yellow-2</button>
+        <button type="button" id="blink2-orange" class="colorbtn btn btn-block btn-outline-dark">Orange-2</button> 
+      
+        <button type="button" id="blink3-red" class="colorbtn btn btn-block btn-outline-dark">Red-3</button>
+        <button type="button" id="blink3-green" class="colorbtn btn btn-block btn-outline-dark">Green-3</button>
+        <button type="button" id="blink3-blue" class="colorbtn btn btn-block btn-outline-dark">Blue-3</button>
+        <button type="button" id="blink3-yellow" class="colorbtn btn btn-block btn-outline-dark">Yellow-3</button>
+        <button type="button" id="blink3-orange" class="colorbtn btn btn-block btn-outline-dark">Orange-3</button>
+
+        <button type="button" id="blink4-red" class="colorbtn btn btn-block btn-outline-dark">Red-4</button>
+        <button type="button" id="blink4-green" class="colorbtn btn btn-block btn-outline-dark">Green-4</button>
+        <button type="button" id="blink4-blue" class="colorbtn btn btn-block btn-outline-dark">Blue-4</button>
+        <button type="button" id="blink4-yellow" class="colorbtn btn btn-block btn-outline-dark">Yellow-4</button>
+        <button type="button" id="blink4-orange" class="colorbtn btn btn-block btn-outline-dark">Orange-4</button>
+
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Effects</h4>
+      </div>
+      <div class="card-body"> 
+        <button type="button" id="champagne" class="colorbtn btn btn-block btn-outline-dark">Champagne</button>
+        <button type="button" id="rainbow1" class="colorbtn btn btn-block btn-outline-dark">Rainbow-1</button>
+        <button type="button" id="rainbow2" class="colorbtn btn btn-block btn-outline-dark">Rainbow-2</button>
+        <button type="button" id="rainbow3" class="colorbtn btn btn-block btn-outline-dark">Rainbow-3</button>
+        <button type="button" id="rainbow4" class="colorbtn btn btn-block btn-outline-dark">Rainbow-4</button>
+      </div>
+    </div>
+  </div>
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <small class="d-block mb-3 text-muted">&copy; 2019</small>
+      </div>
+      </div>
+    </div>
+  </footer>
+</div>
+    <!-- /container -->        
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+</body>
+</html>
+
